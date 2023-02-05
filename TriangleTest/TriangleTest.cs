@@ -89,5 +89,91 @@ namespace TriangleTest
             Assert.AreEqual(expected, result);
         }
 
+        // 5 Scalene Triangles
+        [Test]
+        public void ValidScaleneTriangle_Input3and4and5_OutputValidTriangle()
+        {
+            //Arange
+            int firstSide = 3;
+            int secondSide = 4;
+            int thirdSide = 5;
+
+            string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
+
+            //Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void ValidScaleneTriangle_Input5and12and13_OutputValidTriangle()
+        {
+            //Arange
+            int firstSide = 5;
+            int secondSide = 12;
+            int thirdSide = 13;
+
+            string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
+
+            //Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void ValidScaleneTriangle_Input7and24and25_OutputValidTriangle()
+        {
+            //Arange
+            int firstSide = 7;
+            int secondSide = 24;
+            int thirdSide = 25;
+
+            string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
+
+            //Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void ValidScaleneTriangle_Input8and15and17_OutputValidTriangle()
+        {
+            //Arange
+            int firstSide = 8;
+            int secondSide = 15;
+            int thirdSide = 17;
+
+            string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
+
+            //Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void ValidScaleneTriangle_Input9and10and11_OutputValidTriangle()
+        {
+            //Arange
+            int firstSide = 9;
+            int secondSide = 10;
+            int thirdSide = 11;
+
+            string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
+
+            //Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
     }
 }
