@@ -21,7 +21,7 @@ namespace TriangleTest
     {
         // 1 Equilateral Triangle
         [Test]
-        public void ValidEquilateralTriangle_Input10and10and10_OutputValidTriangle()
+        public void ValidEquilateralTriangle_Input10and10and10_OutputValidEquilateralTriangle()
         {
             //Arange
             int firstSide = 10;
@@ -39,7 +39,7 @@ namespace TriangleTest
 
         // 3 Isosceles Triangles
         [Test]
-        public void ValidIsoscelesTriangle_Input10and10and15_OutputValidTriangle()
+        public void ValidIsoscelesTriangle_Input10and10and15_OutputValidIsoscelesTriangle()
         {
             //Arange
             int firstSide = 10;
@@ -56,7 +56,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void ValidIsoscelesTriangle_Input5and5and3_OutputValidTriangle()
+        public void ValidIsoscelesTriangle_Input5and5and3_OutputValidIsoscelesTriangle()
         {
             //Arange
             int firstSide = 5;
@@ -73,7 +73,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void ValidIsoscelesTriangle_Input7and7and8_OutputValidTriangle()
+        public void ValidIsoscelesTriangle_Input7and7and8_OutputValidIsoscelesTriangle()
         {
             //Arange
             int firstSide = 7;
@@ -91,7 +91,7 @@ namespace TriangleTest
 
         // 5 Scalene Triangles
         [Test]
-        public void ValidScaleneTriangle_Input3and4and5_OutputValidTriangle()
+        public void ValidScaleneTriangle_Input3and4and5_OutputValidScaleneTriangle()
         {
             //Arange
             int firstSide = 3;
@@ -108,7 +108,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void ValidScaleneTriangle_Input5and12and13_OutputValidTriangle()
+        public void ValidScaleneTriangle_Input5and12and13_OutputValidScaleneTriangle()
         {
             //Arange
             int firstSide = 5;
@@ -125,7 +125,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void ValidScaleneTriangle_Input7and24and25_OutputValidTriangle()
+        public void ValidScaleneTriangle_Input7and24and25_OutputValidScaleneTriangle()
         {
             //Arange
             int firstSide = 7;
@@ -142,7 +142,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void ValidScaleneTriangle_Input8and15and17_OutputValidTriangle()
+        public void ValidScaleneTriangle_Input8and15and17_OutputValidScaleneTriangle()
         {
             //Arange
             int firstSide = 8;
@@ -159,7 +159,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void ValidScaleneTriangle_Input9and10and11_OutputValidTriangle()
+        public void ValidScaleneTriangle_Input9and10and11_OutputValidScaleneTriangle()
         {
             //Arange
             int firstSide = 9;
@@ -177,7 +177,7 @@ namespace TriangleTest
 
         // 3 Tests for Veverifying a Zero Length for One or More Sides
         [Test]
-        public void InvalidTriangle_Input0and5and6_OutputInValidTriangle()
+        public void InvalidTriangle_Input0and5and6_OutputInvalidTriangleWith0()
         {
             //Arange
             int firstSide = 0;
@@ -194,7 +194,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void InvalidTriangle_Input0and0and10_OutputInValidTriangle()
+        public void InvalidTriangle_Input0and0and10_OutputInvalidTriangleWith0()
         {
             //Arange
             int firstSide = 0;
@@ -211,7 +211,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void InvalidTriangle_Input10and0and9_OutputInValidTriangle()
+        public void InvalidTriangle_Input10and0and9_OutputInvalidTriangleWith0()
         {
             //Arange
             int firstSide = 10;
@@ -229,7 +229,7 @@ namespace TriangleTest
 
         // 3 Tests for Verifying an Invalid Response (other than a zero length)
         [Test]
-        public void InvalidTriangle_Input5and3and9_OutputInValidTriangle()
+        public void InvalidTriangle_Input5and3and9_OutputInvalidTriangle()
         {
             //Arange
             int firstSide = 5;
@@ -246,7 +246,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void InvalidTriangle_Input2and3and5_OutputInValidTriangle()
+        public void InvalidTriangle_Input2and3and5_OutputInvalidTriangle()
         {
             //Arange
             int firstSide = 2;
@@ -263,7 +263,7 @@ namespace TriangleTest
         }
 
         [Test]
-        public void InvalidTriangle_Input10and10and30_OutputInValidTriangle()
+        public void InvalidTriangle_Input10and10and30_OutputInvalidTriangle()
         {
             //Arange
             int firstSide = 10;
