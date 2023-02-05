@@ -227,5 +227,56 @@ namespace TriangleTest
             Assert.AreEqual(expected, result);
         }
 
+        // 3 Tests for Verifying an Invalid Response (other than a zero length)
+        [Test]
+        public void InvalidTriangle_Input5and3and9_OutputInValidTriangle()
+        {
+            //Arange
+            int firstSide = 5;
+            int secondSide = 3;
+            int thirdSide = 9;
+
+            string expected = "Based on the values entered, the triangle is INVALID";
+
+            //Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void InvalidTriangle_Input2and3and5_OutputInValidTriangle()
+        {
+            //Arange
+            int firstSide = 2;
+            int secondSide = 3;
+            int thirdSide = 5;
+
+            string expected = "Based on the values entered, the triangle is INVALID";
+
+            //Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void InvalidTriangle_Input10and10and30_OutputInValidTriangle()
+        {
+            //Arange
+            int firstSide = 10;
+            int secondSide = 10;
+            int thirdSide = 30;
+
+            string expected = "Based on the values entered, the triangle is INVALID";
+
+            //Act
+            string result = Triangle.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
     }
 }
